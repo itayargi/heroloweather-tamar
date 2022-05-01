@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path={'/'} element={<Home />} />
+          <Route path={screenNames.home} element={<Home />} />
           <Route path={screenNames.favorite} element={<Favorites />} />
         </Routes>
       </Router>

@@ -1,4 +1,4 @@
-const mainUrl = "http://dataservice.accuweather.com/";
+const mainUrl = "https://dataservice.accuweather.com/";
 
 export default {
   city: (apikey, city) =>

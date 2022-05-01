@@ -11,6 +11,7 @@ import {
   toggleShowCelsius,
 } from "../features/counter/counterSlice";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import screenNames from "../utils/screenNames";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const Header = () => {
   return (
     <div className='navbar-container'>
       <div className='logo-container'>
-        <Link to={"/"}>
+        <Link to={screenNames.home}>
           <img
             src={logo}
             width='100'
@@ -48,12 +49,12 @@ const Header = () => {
       </div>
       <div></div>
       <div className='buttons-container'>
-        <Link to='/'>
+        <Link to={screenNames.home}>
           <button type='button' className='home'>
             Home
           </button>
         </Link>
-        <Link to='/favorites'>
+        <Link to={screenNames.favorite}>
           <button type='button' className='favirites'>
             Favirites
           </button>

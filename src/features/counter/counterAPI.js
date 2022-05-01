@@ -2,22 +2,18 @@ import urls from "../urls";
 
 const apikey = "boEG6HPhCrwgQvtZ9RspSdAgZHb9gKk4";
 
-const fetchApi = async (url) => {
+const fetchApi = async (url, text) => {
   let params = {
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-    },
+    method:"GET"
   };
-
-  params.method = "GET";
+  console.log("fetch to:", text);
   console.log("fetch url", url);
   return await fetch(url, params);
 };
 
 export const getCityData = async (city) => {
   return new Promise((resolve) => {
-    fetch(urls.city(apikey, city))
+    fetchApi(urls.city(apikey, city), "getCityData")
       .then((res) => res.json())
       .then((resJson) => {
         console.log("city res:", resJson);
@@ -32,7 +28,7 @@ export const getCityData = async (city) => {
 
 export const getFiveDaysForecasts = async (localKey) => {
   return new Promise((resolve) => {
-    fetch(urls.forecasts(apikey, localKey))
+    fetchApi(urls.forecasts(apikey, localKey), "getFiveDaysForecasts")
       .then((res) => res.json())
       .then((resJson) => {
         console.log("getFiveDaysForecasts res:", resJson);
@@ -48,7 +44,7 @@ export const getFiveDaysForecasts = async (localKey) => {
 
 export const getAutocompleteCities = async (text) => {
   return new Promise((resolve) => {
-    fetch(urls.autocomplete(apikey, text))
+    fetchApi(urls.autocomplete(apikey, text),"getAutocompleteCities")
       .then((res) => res.json())
       .then((resJson) => {
         resolve({ data: resJson });

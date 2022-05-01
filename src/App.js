@@ -10,11 +10,10 @@ function App() {
     <div className='App'>
       <Router>
         <Header />
-        {/* <Routes>
+        <Routes>
           <Route path={'/'} element={<Home />} />
           <Route path={screenNames.favorite} element={<Favorites />} />
-        </Routes> */}
-        <Text>itay haza</Text>
+        </Routes>
       </Router>
     </div>
   );

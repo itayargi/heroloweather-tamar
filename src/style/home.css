@@ -1,0 +1,25 @@
+.container-home-page {
+  height: 37.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.902);
+}
+
+.container-search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-search {
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader{
+  position: absolute;
+}

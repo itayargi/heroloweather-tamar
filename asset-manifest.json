@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/heroloweather-tamar/static/css/main.d08ee29f.css",
-    "main.js": "/heroloweather-tamar/static/js/main.b28ff1df.js",
+    "main.js": "/heroloweather-tamar/static/js/main.1362f4cd.js",
     "static/js/787.02186d7a.chunk.js": "/heroloweather-tamar/static/js/787.02186d7a.chunk.js",
     "static/media/logo3-removebg.png": "/heroloweather-tamar/static/media/logo3-removebg.5fccd7470e6e4409b3d5.png",
     "index.html": "/heroloweather-tamar/index.html",
     "main.d08ee29f.css.map": "/heroloweather-tamar/static/css/main.d08ee29f.css.map",
-    "main.b28ff1df.js.map": "/heroloweather-tamar/static/js/main.b28ff1df.js.map",
+    "main.1362f4cd.js.map": "/heroloweather-tamar/static/js/main.1362f4cd.js.map",
     "787.02186d7a.chunk.js.map": "/heroloweather-tamar/static/js/787.02186d7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d08ee29f.css",
-    "static/js/main.b28ff1df.js"
+    "static/js/main.1362f4cd.js"
   ]
 }

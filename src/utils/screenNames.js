@@ -1,4 +1,4 @@
 export default {
-    home:"/",
+    home:"/heroloweather-tamar/",
     favorite:"/favorites"
 }
